@@ -35,9 +35,6 @@ city_2_unemployment_rate = 7.4
 city_3_name = 'Amsterdam'
 city_3_population = 2431000
 city_3_unemployment_rate = 3.3
-city_4_name = 'Brussels'
-city_4_population = 2500000
-city_4_unemployment_rate = 3.5
 
 # note: Mind the indented structure of if clauses. It matters!!!!
 
@@ -88,18 +85,4 @@ else:
         result = city_2_name + ' is bigger and has a higher unemployment rate than ' + city_1_name
     else:
         result = city_2_name + ' is bigger but has a lower unemployment rate than ' + city_1_name
-print(result)
-
-
-# if and if elif clauses can use multiple conditions using logical operators AND / OR
-if (city_1_population > city_2_population) & (city_1_population > city_3_population) & (city_1_population > city_4_population):
-    result = city_1_name + ' is bigger than ' + city_2_name + ' and ' + city_3_name + ' and ' + city_4_name
-elif (city_2_population > city_1_population) & (city_2_population > city_3_population) & (city_2_population > city_4_population):
-    result = city_2_name + ' is bigger than ' + city_1_name + ' and ' + city_3_name + ' and ' + city_4_name
-elif (city_3_population > city_1_population) & (city_3_population > city_2_population) & (city_3_population > city_4_population):
-    result = city_3_name + ' is bigger than ' + city_1_name + ' and ' + city_2_name + ' and ' + city_4_name
-elif (city_4_population > city_1_population) & (city_4_population > city_2_population) & (city_4_population > city_3_population):
-    result = city_4_name + ' is bigger than ' + city_1_name + ' and ' + city_2_name + ' and ' + city_3_name
-else:
-    result = 'We could not identify which city is bigger'
 print(result)
